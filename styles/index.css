@@ -1,0 +1,14 @@
+:root {
+    box-sizing: border-box;
+    color: white;
+    background-color: #2e2e2e;
+    font-size: 1rem;
+}
+
+a {
+    color: aqua;
+}
+
+a:visited {
+    color: mediumaquamarine;
+}
