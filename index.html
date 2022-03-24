@@ -54,7 +54,7 @@
                 </span>
                 <span class="input-container">
                     <label for="password">Password:</label>
-                    <input type="password" id="password" class="" name="password" placeholder="•••••••••" required>
+                    <input type="password" id="password" minlength="8" maxlength="128" pattern="(([0-9].*[a-zA-Z])|([a-zA-Z].*[0-9])).*" class="" name="password" placeholder="•••••••••" required>
                 </span>
                 <span class="input-container">
                     <label for="confirm-password">Confirm Password:</label>

@@ -9,19 +9,19 @@ function checkPasswordConfirmation(event) {
     let confirmation = confirmPassField.value 
 
     if(confirmation.length == 0 || password == confirmation) {
-        if(password.length >= 8) passField.classList.remove(passwordErrorClassName)
+        /*if(password.length >= 8)*/ passField.classList.remove(passwordErrorClassName)
         confirmPassField.classList.remove(passwordErrorClassName)
     } else {
         passField.classList.add(passwordErrorClassName)
         confirmPassField.classList.add(passwordErrorClassName)
     }
-
+    /*
     if(password.length < 8) {
         passField.classList.add(passwordErrorClassName)
         
         // TODO add hovering box instead of creating a alert
         alert("password length is too low, minumum is 8 characters")
-    }
+    }*/
 }
 
 passField.addEventListener('focusout', checkPasswordConfirmation)

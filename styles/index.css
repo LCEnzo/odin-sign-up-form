@@ -145,6 +145,10 @@ input::placeholder {
     color: rgb(138, 138, 138);
 }
 
+input:invalid {
+    /* TODO:  */
+}
+
 #create-account-button {
     padding: 11px 34px;
     text-align: center;
