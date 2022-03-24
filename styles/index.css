@@ -9,6 +9,8 @@
     font-size: 1rem;
     font-family: sans-serif;
     --honey: #ab5620;
+    --unclicked: #e5b07b;
+    --clicked: #d6824d;
 }
 
 * {
@@ -28,11 +30,14 @@ body {
 }
 
 a {
-    color: aqua;
+    /* color: aqua; */
+    color: var(--unclicked);
 }
 
 a:visited {
-    color: rgb(75, 231, 171);
+    /* color: rgb(75, 231, 171); */
+    /* color: #468df3; */
+    color: var(--clicked);
 }
 
 #sidebar {
@@ -50,7 +55,7 @@ a:visited {
 
 #container-on-sidebar-image,
 #sidebar-img-credits {
-    background-color: rgba(0, 12, 21, 0.4);
+    background-color: rgba(0, 12, 21, 0.58);
     text-align: center;
     margin: 0px;
 }
@@ -136,6 +141,10 @@ fieldset > * {
     font-size: large;
 }
 
+input::placeholder {
+    color: rgb(138, 138, 138);
+}
+
 #create-account-button {
     padding: 11px 34px;
     text-align: center;
@@ -151,4 +160,9 @@ fieldset > * {
 
 form > p {
     margin: var(--vertical-margin) var(--horizontal-margin);
+}
+
+.error {
+    border: 1px solid red;
+    box-shadow: 1px 1px 4px orangered;
 }
