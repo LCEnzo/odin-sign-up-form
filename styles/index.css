@@ -9,8 +9,8 @@
     font-size: 1rem;
     font-family: sans-serif;
     --honey: #ab5620;
-    --unclicked: #e5b07b;
-    --clicked: #d6824d;
+    --unclicked: #d6824d;
+    --clicked: #e5b07b;
 }
 
 * {
@@ -129,6 +129,7 @@ fieldset {
 
 fieldset > * {
     margin: var(--vertical-margin) var(--horizontal-margin);
+    flex-grow: 1;
 }
 
 .input-container {
@@ -146,7 +147,9 @@ input::placeholder {
 }
 
 input:invalid {
-    /* TODO:  */
+    /* color: rgba(252, 98, 98, 0.408); */
+    border: 1px solid red;
+    box-shadow: 1px 1px 4px orangered;
 }
 
 #create-account-button {
@@ -166,7 +169,7 @@ form > p {
     margin: var(--vertical-margin) var(--horizontal-margin);
 }
 
-.error {
+/* .error {
     border: 1px solid red;
     box-shadow: 1px 1px 4px orangered;
-}
+} */
