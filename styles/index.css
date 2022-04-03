@@ -118,7 +118,6 @@ form {
 fieldset {
     margin: 0px;
     padding: 0px;
-    /* border: white dashed 1px; */
     border: none;
     
     display: flex;
@@ -146,8 +145,7 @@ input::placeholder {
     color: rgb(138, 138, 138);
 }
 
-input:invalid {
-    /* color: rgba(252, 98, 98, 0.408); */
+.inputError {
     border: 1px solid red;
     box-shadow: 1px 1px 4px orangered;
 }
@@ -169,7 +167,16 @@ form > p {
     margin: var(--vertical-margin) var(--horizontal-margin);
 }
 
-/* .error {
-    border: 1px solid red;
-    box-shadow: 1px 1px 4px orangered;
-} */
+#submit-button-container {
+    display: flex;
+    flex: row;
+}
+
+#submit-error-message {
+
+    border: 6px solid var(--honey);
+    border-radius: 15px;
+    padding: 8px;
+    background-color: #e5b07b;
+    color: #212121;
+}

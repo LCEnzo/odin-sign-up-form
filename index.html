@@ -50,7 +50,7 @@
                 </span>
                 <span class="input-container">
                     <label for="phone-number">Phone Number:</label>
-                    <input type="tel" id="phone-number" name="phone-number" placeholder="(+381) 65 1234 789" pattern="((\+)?(\d){1,4}(\s)*(\d(\s)*){6,})|\s{0,}}" required>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="(+381) 65 1234 789" pattern="((\+)?(\d){1,4}(\s)*(\d(\s)*){6,})|\s{0,}" required>
                 </span>
                 <span class="input-container">
                     <label for="password">Password:</label>
@@ -62,9 +62,12 @@
                 </span>
             </fieldset>
 
-            <button id="create-account-button">
-                Create account
-            </button>
+            <span id="submit-button-container">
+                <button id="create-account-button">
+                    Create account
+                </button>
+                <p hidden id="submit-error-message">You entered bad info, recheck the form.</p>
+            </span> 
 
             <p> Already have an account? <a href="./index.html">Log in</a> </p>
         </form>
